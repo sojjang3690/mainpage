@@ -6,6 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>랜덤 타로카드</title>
   <style>
+    .main-img {
+  width: 300px;
+  max-width: 80%;
+  height: auto;
+  margin: 1em auto;
+  display: block;
+  border-radius: 1em;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
     body { font-family: 'Arial', sans-serif; background: #f8f4ef; text-align: center; padding: 2em; }
     .hidden { display: none; }
     .card-img { width: 300px; max-width: 90%; margin-bottom: 1em; }
@@ -16,12 +25,17 @@
 </head>
 <body>
 
-  <!-- 메인 화면 -->
-  <div id="main-page">
-    <h1>환영합니다!</h1>
-    <p>오늘의 타로카드를 뽑아볼까요?</p>
-    <button class="button" onclick="startTarot()">타로 뽑기 시작하기</button>
-  </div>
+ <!-- 메인 화면 -->
+<div id="main-page">
+  <h1>환영합니다!</h1>
+  <p>오늘의 타로카드를 뽑아볼까요?</p>
+
+  <!-- 이미지 추가 -->
+  <img src="타로 메인페이지.png" alt="타로 메인 이미지" class="main-img"/>
+
+  <br>
+  <button class="button" onclick="startTarot()">타로 뽑기 시작하기</button>
+</div>
 
   <!-- 타로 카드 화면 -->
   <div id="tarot-page" class="hidden">
